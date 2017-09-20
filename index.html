@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+<!--[if lt IE 9]>-->
+<script>
+	document.createElement('video');
+</script>
+<!--[endif]-->
+
+    <title>Jen Schumann</title>
+  </head>
+  <body>
+
+
+<p>test</p>
+
+    <video playsinline autoplay muted loop poster="jenschumann_background.jpg" id="bgvid">
+    <source src="jenschumann_background.webm" type="video/webm">
+    <source src="jenschumann_background.mp4" type="video/mp4">
+</video>
+
+<button id="vidpause">Pause</button>
+
+<p>test2</p>
+
+
+
+
+<script type="text/javascript">
+
+
+  var vid = document.getElementById("bgvid"),
+pauseButton = document.getElementById("vidpause");
+if (window.matchMedia('(prefers-reduced-motion)').matches) {
+    vid.removeAttribute("autoplay");
+    vid.pause();
+    pauseButton.innerHTML = "Paused";
+}
+
+function vidFade() {
+    vid.classList.add("stopfade");
+}
+vid.addEventListener('ended', function() {
+    // only functional if "loop" is removed
+     vid.pause();
+	// to capture IE10
+	vidFade();
+});
+pauseButton.addEventListener("click", function() {
+    vid.classList.toggle("stopfade");
+	if (vid.paused) {
+vid.play();
+		pauseButton.innerHTML = "Pause";
+	} else {
+        vid.pause();
+        pauseButton.innerHTML = "Paused";
+	}
+})
+
+
+</script>
+</body>
+
+</html>
