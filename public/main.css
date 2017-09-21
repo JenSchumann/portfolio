@@ -1,34 +1,198 @@
-
-
-video#bgvid {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background: url(polina.jpg) no-repeat;
-    background-size: cover;
+* {
+  /*border: 1px solid hotpink;*/
+  /*background-color: hotpink;*/
 }
 
-video { display: block; }
+/*body {
+  height: 100%;
+  background-color: white;
+}*/
 
-@media screen and (max-device-width: 800px) {
-    html {
-         background: url("jenschumann_background.jpg") #000 no-repeat center center fixed;
-    }
-    #bgvid {
-        display: none;
-    }
+h1, h2, {
+	font-family: 'Loved by the King', cursive;
+/*font-family: 'Slackey', cursive;
+font-family: 'Mouse Memoirs', sans-serif;
+font-family: 'Macondo', cursive;
+font-family: 'Cherry Cream Soda', cursive;*/
 }
 
-video#bgvid {
-    transition: 1s opacity;
+
+/*how get navbar on right side to stop bleeding over into white space?*/
+.navbar {
+  margin: 0;
+  font-weight: bold;
+	color: #f7f2e9;
 }
-.stopfade { opacity: .5; }
+
+/*navbar background color*/
+.navbar-default {
+  background-color:#4f3112;
+  background-image: none;
+  background-repeat: no-repeat;
+	color: #f7f2e9;
+ }
+
+.navbar-right, .navbar-text {
+  font-size: 3.0rem;
+  font-family: 'Loved by the King', cursive;
+	padding: 1em 0 1em 0 1em;
+	/*padding-left: 1em;*/
+	padding-top: .5em;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-top: .5em;
+	/*color: #f7f2e9;*/
+	color: white;
+}
+
+
+.main-img {
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -5;
+  top: 0px;
+  left: 0px;
+  background-position: center center fixed no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}
+
+#heading {
+  background: transparent;
+  min-height: 100%;
+  position: relative;
+  padding-top: 5%;
+  padding-bottom: 1%;
+  width: 100%;
+}
+
+.title {
+  color: #4f3112;
+  font-weight: bold;
+  font-size: 9rem;
+  margin: auto 0;
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 1%;
+	font-family: 'Loved by the King', cursive;
+}
+
+.subtitle {
+  color: #4f3112;
+  font-weight: bold;
+  font-size: 6rem;
+  margin: auto 0;
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 2%;
+	font-family: 'Loved by the King', cursive;
+}
+
+hr.style17 {
+	border-top: 1.5px solid #8c8b8b;
+	text-align: center;
+	padding-bottom: 9%;
+}
+hr.style17:after {
+	content: '§';
+	display: inline-block;
+	position: relative;
+	top: -14px;
+	padding: 0 10px;
+	background: #f0f0f0;
+	color: #8c8b8b;
+	font-size: 18px;
+	-webkit-transform: rotate(60deg);
+	-moz-transform: rotate(60deg);
+	transform: rotate(60deg);
+
+}
+
+/*=============
+About Section
+=============*/
+
+#about-container {
+	width: 100%;
+	padding-bottom: 0;
+}
+
+#about-jumbotron  {
+	background-color: white;
+	width: 100%;
+	text-align: center;
+	padding: 5%;
+}
+
+#about-container img {
+	height: 15em;
+	width: 15em;
+}
+
+/*Carousel Styles*/
+.carousel{
+    background: #2f4357;
+    margin-top: 20px;
+}
+.carousel .item{
+    min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+.carousel .item img{
+    margin: 0 auto; /* Align slide image horizontally center */
+}
+.bs-example{
+	margin: 20px;
+}
+
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+		color: white;
+		font-weight: bold;
+		font-family: 'BenchNine', sans-serif;
+		font-size: 6rem;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+		color: #f7f2e9;
+}
+
+.contactMe {
+	margin: 0 auto;
+}
+
+.extraClass {
+	font-size: 3rem;
+	color: #4f3112;
+	cursor: pointer;
+	/*margin: 0 auto;*/
+}
+
+#contactLinks, #myGit, #myLinkedIn, #myGAProfile, #myTwitAcc {
+	margin: 0 auto;
+	align-items: center;
+	position: relative;
+	justify-content: center;
+	font-family: 'BenchNine', sans-serif;
+	font-size: 3rem;
+	color: #4f3112;
+	font-weight: bold;
+	text-align: center;
+	align-items: center;
+	cursor: pointer;
+	display: block;
+}
+
+.emaillink {
+	font-family: 'BenchNine', sans-serif;
+	font-size: 3rem;
+	/*color: #4f3112;*/
+	font-weight: bold;
+	text-align: center;"
+}

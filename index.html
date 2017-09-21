@@ -2,65 +2,222 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!--[if lt IE 9]>-->
-<script>
-	document.createElement('video');
-</script>
-<!--[endif]-->
 
     <title>Jen Schumann</title>
+
+    <!--Favicon -->
+    <link href="./public/penrose-tiled-sphere-144-220807.png" rel="icon" type="image/png" >
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cherry+Cream+Soda|Loved+by+the+King|Macondo|BenchNine" rel="stylesheet">
+
+    <!-- scripts -->
+
+    <!-- decide whether going to use jquery?? -->
+      <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script> -->
+
+      <!-- jquery  -->
+          <!-- <script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script> -->
+          <!-- bootstrap -->
+          <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> -->
+
+          <script src="https://use.fontawesome.com/8795c8a7ae.js"></script>
+
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+      <script type="text/javascript" src="js/app.js"></script>
+      <!-- Styles -->
+
+
+
+
+      <link rel="stylesheet" href="public/main.css">
+
   </head>
   <body>
 
+<!-- Background Image -->
+<img class="main-img img-responsive" src="./public/design-pattern-texture-structure-159076.jpeg"alt="Jen Schumann"/>
 
-<p>test</p>
+<!-- Nav Bar -->
 
-    <video playsinline autoplay muted loop poster="jenschumann_background.jpg" id="bgvid">
-    <source src="jenschumann_background.webm" type="video/webm">
-    <source src="jenschumann_background.mp4" type="video/mp4">
-</video>
+    <nav class="navbar navbar-inverse navbar-static-top">
 
-<button id="vidpause">Pause</button>
+      <!--  About -->
+      <a href="#about" class="navbar-text navbar-left" style="color: #f7f2e9;">About</a>
 
-<p>test2</p>
+      <a href="#contact" class="navbar-text navbar-left" style="color: #f7f2e9;">Contact</a>
+      <!-- Projects -->
+      <a href="#projects" class="navbar-text navbar-right" style="color: #f7f2e9;">Projects</a>
+
+      <!-- Resume -->
+      <a href="https://drive.google.com/file/d/0B1EvkgyFTWaFMmdmekNVcG1renc/view?usp=sharing" target="_blank" class="navbar-text navbar-right" style="color: #f7f2e9;">Resume</a>
+
+    </nav>
+
+<!-- Header Section ---->
+  <header>
+    <div class="jumbotron text-center" id="heading">
+      <div class="container intro-text">
+        <h1 class="title" style="font-size: 9rem; color: #4f3112;">Jen Schumann</h1>
+        <hr>
+        <h2 class="subtitle">Vision, Perspective, Perseverance</h2>
+        <h4 style="font-family: 'Loved by the King'; font-size: 4.5rem; color: #4f3112; font-weight: bold;">Full Stack Developer</h4>
+      </div>
+    </div>
+  </header>
+
+<!-- About Me Section -->
+<a id="about">
+<div class="container" id="about-container">
+  <div class="row">
+
+  <div class="jumbotron" id="about-jumbotron">
+
+      <h1 id="title" style="font-family: 'Loved by the King'; font-size: 6rem; color: #4f3112; font-weight: bold;">About Me</h1>
+      <img src="https://i.imgur.com/B54Bbi5b.jpg" alt="Jen Schumann">
+
+      <h3 style="font-family: 'BenchNine', sans-serif; font-size: 3rem; color: #4f3112; font-weight: bold;">Hello there, I'm Jen.
+        <br>
+        As a teacher turned developer, I'm humbled by how creativity intersects with logic.<br>In the face of challenge, I act with relentless tenacity.<br>I love adding humor while problem-solving with others!
+      </h3>
+    </div>
+  </div>
+</div>
+<hr class="style17">
+</a>
+
+<!-- My Project Section -->
+<a id="projects"></a>
+ <div class="container" id="project-container">
+  <div class="row">
+      <div class="col-xs-12">
 
 
+  <div class="jumbotron" id="project-jumbotron">
+      <h1 id="title" style="font-family: 'Loved by the King'; font-size: 6rem; color: #4f3112; font-weight: bold; text-align: center;">Projects</h1><br><br>
+
+     <!-- project 1 mountain pic 1
+
+     <a href="https://imgur.com/GZGmjQH">
+       <img src="https://i.imgur.com/GZGmjQH.png" title="source: imgur.com" /></a>
+
+       project 1 mountain pic 2
+
+       <a href="https://imgur.com/nFMSazb"><img src="https://i.imgur.com/nFMSazb.png" title="source: imgur.com" /></a>
 
 
-<script type="text/javascript">
+       project 2 travel books pic 1
+<a href="https://imgur.com/v0dSYZS"><img src="https://i.imgur.com/v0dSYZS.png" title="source: imgur.com" /></a>
+
+       project 2 travel books 2
+
+<a href="https://imgur.com/4X8CzyS"><img src="https://i.imgur.com/4X8CzyS.png" title="source: imgur.com" /></a>
 
 
-  var vid = document.getElementById("bgvid"),
-pauseButton = document.getElementById("vidpause");
-if (window.matchMedia('(prefers-reduced-motion)').matches) {
-    vid.removeAttribute("autoplay");
-    vid.pause();
-    pauseButton.innerHTML = "Paused";
-}
+      project 3 girl gang pic 1
 
-function vidFade() {
-    vid.classList.add("stopfade");
-}
-vid.addEventListener('ended', function() {
-    // only functional if "loop" is removed
-     vid.pause();
-	// to capture IE10
-	vidFade();
-});
-pauseButton.addEventListener("click", function() {
-    vid.classList.toggle("stopfade");
-	if (vid.paused) {
-vid.play();
-		pauseButton.innerHTML = "Pause";
-	} else {
-        vid.pause();
-        pauseButton.innerHTML = "Paused";
-	}
-})
+       <a href="https://imgur.com/FRF6bVD"><img src="https://i.imgur.com/FRF6bVD.png" title="source: imgur.com" /></a>
+       project 3 girl gang 2
+
+       <a href="https://imgur.com/nFMSazb"><img src="https://i.imgur.com/nFMSazb.png" title="source: imgur.com" /></a>
 
 
-</script>
+       project 4 mountain pic 1
+       <a href="https://imgur.com/AxohI4T"><img src="https://i.imgur.com/AxohI4T.jpg" title="source: imgur.com" /></a>
+       project 4 mountain pic 2
+ -->
+
+
+ <!-- poject carousel -->
+
+ <div class="bs-example">
+    <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+    	<!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+            <div class="active item">
+                <img src="public/mountainClimber1.png" alt="You Have Climbed This Mountain">
+         		<div class="carousel-caption">
+                  <a href="https://dashboard.heroku.com/apps/climbfourteenerapp"><h3>You Have Climbed This Mountain</h3>
+                  <p>A full-stack CRUD app for users to share posts regarding their summits of CO 14eeners, inspired by my love of hiking.  Utilized bootstrap & delved into responsive design.</p></a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="public/girl_gang1.png" alt="Girl Gang">
+                <div class="carousel-caption">
+                  <a href="https://girl-gang.herokuapp.com/"><h3>Girl Gang</h3>
+                  <p>One week sprint & collaborative approach which yielded a shared space to celebrate and empower all things femme.  Single-page, sessions based, four model CRUD app.</p></a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="public/travel_books1.png" alt="Travel Books">
+                <div class="carousel-caption">
+                  <a href="https://travel-books.herokuapp.com/"><h3>Travel Books</h3>
+                  <p>Travel Books is a single-page, full CRUD, session based app with MVC file organization and serves a JSON API.</p></a>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel controls -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+
+  </div>
+  </div>
+  <br>
+  <br>
+
+  <hr class="style17">
+
+
+<!-- Contact Section -->
+
+<a id="contact">
+
+  <div class="jumbotron" id="contact-jumbotron">
+   <div class="row">
+       <div class="col-xs-12">
+
+
+       <h1 id="title" style="font-family: 'Loved by the King'; font-size: 6rem; color: #4f3112; font-weight: bold; text-align: center;">Contact Me:</h1>
+       <h3 style="font-family: 'BenchNine', sans-serif; font-size: 3rem; color: #4f3112; font-weight: bold; text-align: center;">Please feel welcome to reach out.<br>I look forward to connecting with you!</h3>
+
+       <!-- Contact Info -->
+
+
+       <div class="contactMe">
+
+
+             <a id="contactLinks" href="mailto:jenniferschumann1@gmail.com"><i class="fa fa-envelope-o extraClass" aria-hidden="true"></i>  jenniferschumann1@gmail.com</a>
+
+             <a id="myGit" href="https://github.com/JenSchumann"><i class="fa fa-github extraClass" aria-hidden="true"></i>  Github</a>
+
+             <a id="myLinkedIn" href="https://www.linkedin.com/in/jenschumann"><i class="fa fa-linkedin extraClass" aria-hidden="true"></i>    LinkedIn</a>
+
+             <a id="myGAProfile" href="https://profiles.generalassemb.ly/profiles/jen-schumann"><i class="fa fa-graduation-cap extraClass" aria-hidden="true"></i>    GA Profile</a>
+
+             <a id="myTwitAcc" href="https://twitter.com/jschumann007"><i class="fa fa-twitter extraClass" aria-hidden="true"></i>    Twitter</a>
+
+</div>
+
+<br>
+
 </body>
-
-</html>
